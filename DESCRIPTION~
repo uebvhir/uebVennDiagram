@@ -1,0 +1,13 @@
+Package: uebVennDiagram
+Title: Venn and Euler diagrams from lists of elements (top tables), creating the corresponding table of shared and non-shared elements
+Version: 0.0.0.9000
+Authors@R: person("Ferran", "Brianso", email = "ferran.brianso@vhir.org", role = c("aut", "cre"))
+Description: The function createVennEuler() of this package generates Venn and Euler diagrams from lists of elements (top tables), creating the corresponding table of shared and non-shared elements. It, first, takes csv-like files (known as top tables) and some other params (such as the columns where to find the elements to compare and the criteria to filter the lists before overlapping them), then plots the Venn and/or Euler diagram showing the degree of overlapping between the filtered lists and, finally returns (and writes to output csv file if desired) the table of elements exclusively detected on each list and shared by each combination of them.
+Depends: R (>= 3.2.3)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    VennDiagram (>= 1.6.9),
+    venneuler (>= 1.1-0)
+RoxygenNote: 5.0.1
